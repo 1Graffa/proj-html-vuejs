@@ -6,7 +6,7 @@
 }
 hr{
   width: 60px;
-  border-top: 2px solid red;
+  border-top: 2px solid rgb(255,70,18);
   border-bottom: none;
   border-left: none;
   border-right: none
@@ -27,6 +27,7 @@ nav{
   z-index: 1;
   top: 0;
   left: 50%;
+  font-size: 18px;
   transform: translate(-50%);
   width: 1280px;
   height: 35px;
@@ -42,6 +43,12 @@ nav ul{
 }
 nav ul li{
   padding-right: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+nav ul li:hover{
+  color:rgb(255,70,18);
+
 }
 /* FINE Nav fixed */
 /* JUMBOTRON */
@@ -65,7 +72,7 @@ nav ul li{
   font-size: 60px;
 }
 .jumbo-sx h1 span{
-  color: red;
+  color: rgb(255,70,18);
 }
 .jumbo-buttons{
   display: flex;
@@ -84,7 +91,7 @@ nav ul li{
 }
 .jumbo-buttons .dx-button button{
   color: white;
-  background-color: red;
+  background-color: rgb(255,70,18);
 }
 /* LE NOSTRE SPECIALITA' */
 .our-specialities{
@@ -101,7 +108,7 @@ nav ul li{
   width: 100px;
 }
 .our-specialities h2 span{
-  color: red;
+  color: rgb(255,70,18);
 }
 .our-specialities .row1{
   text-align: center;
@@ -125,7 +132,7 @@ nav ul li{
   justify-content: center;
   align-items: center;
   background-image: url(../svg/svg-4.svg);
-  background-color: lightgrey;
+  background-color:rgb(250,250,250);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -154,12 +161,17 @@ nav ul li{
   margin-right: 7px;
   text-align: center;
   color:white;
-  background-color: red;
+  background-color: rgb(255,70,18);
   border-radius: 50%;
   padding: 5px;
   font-size: 16px;
   width: 25px;
   height: 25px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.social i:hover{
+  background-color: black;
 }
 /* UPCOMING EVENTS SECONDO JUMBOTRON */
 .upcoming-events{
@@ -173,7 +185,7 @@ nav ul li{
 }
 .calendar{
   width: 40%;
-  background-color: lightgrey;
+  background-color: rgb(250,250,250);
 }
 .calendar h3{
   border-bottom: 1px solid grey;
@@ -185,15 +197,19 @@ nav ul li{
   justify-content: space-around;
   padding: 30px;
   line-height: 1.6;
+  cursor: pointer;
+  transition: 0.2s
 }
 .event:not(:last-child){
   border-bottom: 1px solid grey;
+  box-shadow: 1px 1px 1px grey;
 }
 .event:hover{
   background-color: white;
+  transform: scale(1.01);
 }
 .event-sx .square{
-  background: red;
+  background: rgb(255,70,18);
   color: white;
 }
 .event i{
@@ -222,7 +238,7 @@ margin-top: 15px;
 margin-bottom: 15px;
 }
 .creative-leader h2 span{
-  color: red;
+  color: rgb(255,70,18);
 }
 .creative-leader p:last-child{
   font-size: 10px;
@@ -242,7 +258,7 @@ margin-bottom: 15px;
   width: 100%;
   height: 4px;
   border-radius: 5px;
-  background-color: lightgrey;
+  background-color: rgb(235,235,235);
 }
 .centrale .barra {
   width: 100%;
@@ -251,7 +267,7 @@ margin-bottom: 15px;
   position: relative;
   height: 100%;
   border-radius: 2px;
-  background-color: red;
+  background-color: rgb(255,70,18);
 }
 .mentorship .linea {
   width: 78%;
@@ -266,12 +282,16 @@ margin-bottom: 15px;
   width: 83%;
 }
 /* Latest NEWS CAROSELLO */
+.latest-news i{
+  padding-right: 5px;
+  color: rgb(255,70,18);
+}
 .latest-titolo{
   text-align: center;
   line-height: 1.6;
 }
 .latest-titolo h2 span{
-  color: red;
+  color: rgb(255,70,18);
 }
 .latest-titolo hr{
   margin: auto;
@@ -313,7 +333,7 @@ margin-bottom: 15px;
   position: absolute;
   width: 120px;
   color: white;
-  background-color: red;
+  background-color: rgb(255,70,18);
   top: 180px;
   right: 60px;
   padding: 8px;
@@ -331,6 +351,11 @@ margin-bottom: 15px;
   justify-content: space-around;
   height: 400px;
 }
+.testimonials-container i{
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
 .testimonials-container h2{
   z-index: -1;
   font-size: 180px;
@@ -341,12 +366,15 @@ margin-bottom: 15px;
   position: absolute;
 }
 .testimonials-container h2 span{
- color: red;
+ color: rgb(255,70,18);
 }
 .testimonial-box{
   width: 33%;
   text-align: center;
   line-height: 1.4;
+}
+.testimonial-box img{
+  width: 120px;
 }
 .testimonial-box h4{
   padding-bottom: 10px;
@@ -384,7 +412,7 @@ margin-bottom: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% -50%);
+  transform: translateX(-50% -50%);
   font-size: 40px;
   color: white
 }
@@ -410,7 +438,7 @@ margin-bottom: 15px;
   height: 300px;
 }
 .contatti  h2 span{
- color: red;
+ color: rgb(255,70,18);
 }
 .ny,.spb,.sy{
   position: absolute;
@@ -427,6 +455,26 @@ margin-bottom: 15px;
   right: 80px;
   bottom: 60px;
 }
+/* DropDown città */
+.dd{
+  position: absolute;
+  box-shadow: 0 5px 5px -5px;
+  background: white;
+  padding:10px;
+  z-index: 1;
+}
+.dd-ny{
+  left: 110px;
+  top: 135px;
+}
+.dd-spb{
+  left: 240px;
+  top: 110px;
+}
+.dd-sy{
+  right: 70px;
+  bottom: 20px;
+}
 .contatti .imput{
   height: 300px;
   width: 40%
@@ -442,7 +490,7 @@ margin-bottom: 15px;
   border: none;
   outline: none;
   color: white;
-  background-color: red;
+  background-color: rgb(255,70,18);
 }
 .contatti-bottom ul{
   width: 80%;
@@ -482,11 +530,18 @@ footer hr{
   display: flex;
 }
 .twitter i{
-  color:red;
+  color:rgb(255,70,18);
   margin-top: 5px;
-  margin-right: 10px
+  margin-right: 10px;
+  cursor: pointer;
+}
+.twitter i:hover,
+.twitter p:hover{
+  color white;
+
 }
 footer .social i{
+  margin-top: 15px;
   margin-right: 7px;
   text-align: center;
   color: black;
@@ -496,4 +551,28 @@ footer .social i{
   font-size: 16px;
   width: 20px;
   height: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+footer .social i:hover{
+  background-color: rgb(255,70,18);
+}
+.links li{
+  cursor:pointer;
+}
+.links li:hover{
+  color:white
+}
+.contact-me i{
+  color: rgb(255,70,18);
+  padding-right: 10px;
+
+}
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 30px;
+  background-color: rgb(255,70,18);
 }
