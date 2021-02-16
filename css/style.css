@@ -390,7 +390,7 @@ margin-bottom: 15px;
 }
 /* CONTATTI */
 .contatti{
-
+  padding: 70px 0
 }
 .contatti-top{
   display: flex;
@@ -450,4 +450,50 @@ margin-bottom: 15px;
   align-items: center;
   justify-content: space-between;
   margin:auto;
+}
+/* FOOTER */
+footer{
+  background-color: black
+}
+.footer-container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin:auto;
+}
+footer{
+  color: grey;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  line-height: 1.4
+}
+footer h5{
+  color: white
+}
+footer hr{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 30px
+}
+.about,.twitter,.links,.contact-me{
+  width: 20%
+}
+.twitter div{
+  display: flex;
+}
+.twitter i{
+  color:red;
+  margin-top: 5px;
+  margin-right: 10px
+}
+footer .social i{
+  margin-right: 7px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
 }
