@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+  <html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Our Team</title>
+  </head>
+  <body>
+    <!-- <div id="app" class="container">
+    </div> -->
+    <!-- NAVBAR FIXED -->
+    <nav>
+      <div class="nav-sx">
+        <img src="img/logo-img-01.png" alt="">
+      </div>
+      <div class="nav-dx">
+        <ul>
+          <li>homes</li>
+          <li>pages</li>
+          <li>shop</li>
+          <li>events</li>
+          <li>elements</li>
+          <li><i class="fas fa-search"></i></li>
+          <li><i class="fas fa-list"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron">
+        <i class="fas fa-angle-left"></i>
+        <div class="jumbo-sx">
+          <h1>Our Team<span>.</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="jumbo-buttons">
+            <div class="sx-button">
+              <button type="button" name="button">read more
+              </button>
+            </div>
+            <div class="dx-button">
+              <button type="button" name="button">purchase
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="jumbo-dx">
+            <!-- vuoto, così ho potuto flexare agilmente da freccia a freccia-->
+        </div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <!-- OUR SPECIALITIES -->
+      <div class="our-specialities">
+        <div class="row1">
+          <h2>Our specialities<span>.</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <hr>
+        </div>
+        <div class="row2">
+          <ul>
+            <li><img src="svg/svg-0.svg" alt="K">
+            <h3>knowing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur</p></li>
+            <li><img src="svg/svg-1.svg" alt="S">
+            <h3>selling</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur</p></li>
+            <li><img src="svg/svg-2.svg" alt="L">
+            <h3>learning</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur</p></li>
+            <li><img src="svg/svg-3.svg" alt="C">
+            <h3>contact</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="jason-b">
+        <div class="jason-image">
+          <img src="img/h1-blog-img-04.jpg" alt="">
+        </div>
+        <div class="jason-text">
+          <h3>Jason Bickford</h3>
+          <p>Founder and Executive Director</p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+          <div class="social-e-firma">
+            <div class="social">
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="firma">
+              <img src="img/sign.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- UPCOMING EVENTS SECONDO JUMBOTRON-->
+      <div class="upcoming-events">
+        <div class="calendar">
+          <h3>Upcoming Events</h3>
+          <div class="event">
+            <div class="event-sx">
+              <div class="square">
+                <p>giorno</p>
+                <p>mese</p>
+              </div>
+            </div>
+            <div class="event-dx">
+              <h4>Melbourne Coaching</h4>
+              <p><i class="far fa-clock"></i><span>9:00 am - 5:00pm</span></p>
+              <p><i class="fas fa-map-marker-alt"></i>Cambridge, MA 02138,USA</p>
+              <p>read more</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-sx">
+              <div class="square">
+                <p>giorno</p>
+                <p>mese</p>
+              </div>
+            </div>
+            <div class="event-dx">
+              <h4>Melbourne Coaching</h4>
+              <p><i class="far fa-clock"></i><span>9:00 am - 5:00pm</span></p>
+              <p><i class="fas fa-map-marker-alt"></i>Cambridge, MA 02138,USA</p>
+              <p>read more</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-sx">
+              <div class="square">
+                <p>giorno</p>
+                <p>mese</p>
+              </div>
+            </div>
+            <div class="event-dx">
+              <h4>Melbourne Coaching</h4>
+              <p><i class="far fa-clock"></i><span>9:00 am - 5:00pm</span></p>
+              <p><i class="fas fa-map-marker-alt"></i>Cambridge, MA 02138,USA</p>
+              <p>read more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CREATIVE LEADER -->
+      <div class="creative-leader">
+        <div class="creative-sx">
+          <h2>Creative Leader<span>.</span></h2>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in sociis.</p>
+          <p>read more</p>
+        </div>
+        <div class="creative-dx">
+          <div>
+            <h5>Mentorship</h5>
+            <h5>78%</h5>
+          </div>
+          <div class="barra mentorship">
+            <div class="linea">
+            </div>
+          </div>
+          <div>
+            <h5>Education</h5>
+            <h5>95%</h5>
+          </div>
+          <div class="barra education">
+            <div class="linea">
+            </div>
+          </div>
+          <div>
+            <h5>Learning</h5>
+            <h5>65%</h5>
+          </div>
+          <div class="barra learning">
+            <div class="linea">
+            </div>
+          </div>
+          <div>
+            <h5>Motivation</h5>
+            <h5>83%</h5>
+          </div>
+            <div class="barra motivation">
+              <div class="linea">
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- LATEST NEWS -->
+      <div class="latest-news">
+        <div class="latest-titolo">
+          <h2>Latest news<span>.</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <hr>
+        </div>
+        <div class="carosello">
+          <div class="box-sx">
+            <img src="img/h1-blog-img-02.jpg" alt="img1">
+            <div class="red-box"><i class="far fa-clock"></i> Business, Leading</div>
+            <p><i class="far fa-clock"></i><span> May 5,2019</span><i class="far fa-clock"></i><span> Amanda Doe </span></p>
+            <h3>Next investiment</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... </p>
+            <p>read more</p>
+          </div>
+          <div class="box-cc">
+            <img src="img/h1-blog-img-03.jpg" alt="img2">
+            <div class="red-box"><i class="far fa-clock"></i> Business, Leading</div>
+            <p><i class="far fa-clock"></i><span> May 5,2019</span><i class="far fa-clock"></i><span> Amanda Doe </span></p>
+            <h3>Next investiment</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... </p>
+            <p>read more</p>
+          </div>
+          <div class="box-dx">
+            <img src="img/h1-blog-img-01.jpg" alt="img3">
+            <div class="red-box"><i class="far fa-clock"></i> Business, Leading</div>
+            <p><i class="far fa-clock"></i><span> May 5,2019</span><i class="far fa-clock"></i><span> Amanda Doe </span></p>
+            <h3>Next investiment</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... </p>
+            <p>read more</p>
+          </div>
+        </div>
+      </div>
+      <!-- TESTIMONIALS -->
+      <div class="overlay">
+        <div class="testimonials-container">
+          <h2>Testimonials<span>.</span></h2>
+          <i class="fas fa-angle-left"></i>
+          <div class="testimonial-box">
+            <img src="img/h3-img-04.png" alt="testimonial">
+            <h4>Cynthia Clark</h4>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+          </div>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </div>
+      <!-- AREA VIDEO -->
+      <div class="area-video">
+        <i class="fas fa-angle-right"></i>
+        <div class="quadratini">
+          <img class="cerchio"src="svg/svg-8.svg" alt="">
+          <img class="carrello"src="svg/svg-7.svg" alt="">
+        </div>
+      </div>
+      <!-- CONTATTI -->
+      <div class="contatti">
+        <div class="contatti-top">
+          <div class="globo">
+            <img class="ny" src="img/h1-contact-rev-02.png" alt="+">
+            <img class="spb" src="img/h1-contact-rev-02.png" alt="+">
+            <img  class="sy"src="img/h1-contact-rev-02.png" alt="+">
+          </div>
+          <div class="imput">
+            <h2>Contact us<span>.</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <hr>
+            <input type="text" placeholder="Your Name">
+            </input>
+            <input type="text" placeholder="Your e-mail">
+            </input>
+            <input type="text-area" placeholder="Write a message">
+            </input>
+            <button type="button" name="button">Send</button>
+          </div>
+        </div>
+        <div class="contatti-bottom">
+          <ul>
+            <li><img src="img/h4-clients-img-03.png" alt="ad"></li>
+            <li><img src="img/h4-clients-img-05.png" alt="adidas"></li>
+            <li><img src="img/h4-clients-img-07.png" alt="bb"></li>
+            <li><img src="img/h4-clients-img-09.png" alt="aa"></li>
+            <li><img src="img/h4-clients-img-01.png" alt="rko"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <!-- JS link -->
+  <script src="js/script.js" charset="utf-8"></script>
+  </body>
+  </html>
