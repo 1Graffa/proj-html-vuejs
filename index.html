@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favi.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -14,8 +14,8 @@
     <title>Our Team</title>
   </head>
   <body>
-    <!-- <div id="app" class="container">
-    </div> -->
+  <div id="app" class="container">
+
     <!-- NAVBAR FIXED -->
     <nav>
       <div class="nav-sx">
@@ -203,7 +203,7 @@
           <div class="box-sx">
             <img src="img/h1-blog-img-02.jpg" alt="img1">
             <div class="red-box"><i class="far fa-clock"></i> Business, Leading</div>
-            <p><i class="far fa-clock"></i><span> May 5,2019</span><i class="far fa-clock"></i><span> Amanda Doe </span></p>
+            <p><i class="far fa-clock"></i><span> May 5,2019</span><i class="far fa-user"></i><span> Amanda Doe </span></p>
             <h3>Next investiment</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... </p>
             <p>read more</p>
@@ -211,7 +211,7 @@
           <div class="box-cc">
             <img src="img/h1-blog-img-03.jpg" alt="img2">
             <div class="red-box"><i class="far fa-clock"></i> Business, Leading</div>
-            <p><i class="far fa-clock"></i><span> May 5,2019</span><i class="far fa-clock"></i><span> Amanda Doe </span></p>
+            <p><i class="far fa-clock"></i><span> May 5,2019</span><i class="far fa-user"></i><span> Amanda Doe </span></p>
             <h3>Next investiment</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... </p>
             <p>read more</p>
@@ -219,7 +219,7 @@
           <div class="box-dx">
             <img src="img/h1-blog-img-01.jpg" alt="img3">
             <div class="red-box"><i class="far fa-clock"></i> Business, Leading</div>
-            <p><i class="far fa-clock"></i><span> May 5,2019</span><i class="far fa-clock"></i><span> Amanda Doe </span></p>
+            <p><i class="far fa-clock"></i><span> May 5,2019</span><i class="far fa-user"></i><span> Amanda Doe </span></p>
             <h3>Next investiment</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... </p>
             <p>read more</p>
@@ -230,18 +230,19 @@
       <div class="overlay">
         <div class="testimonials-container">
           <h2>Testimonials<span>.</span></h2>
-          <i class="fas fa-angle-left"></i>
+          <i @click="changeImg" class="fas fa-angle-left"></i>
           <div class="testimonial-box">
-            <img src="img/h3-img-04.png" alt="testimonial">
-            <h4>Cynthia Clark</h4>
+            <img :src="testimonial" alt="testimonial">
+            <!-- <img src="img/h3-img-04.png" alt="testimonial"> -->
+            <h4>Our testimonias</h4>
             <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
           </div>
-          <i class="fas fa-angle-right"></i>
+          <i @click="changeImg" class="fas fa-angle-right"></i>
         </div>
       </div>
       <!-- AREA VIDEO -->
       <div class="area-video">
-        <i class="fas fa-angle-right"></i>
+        <i class="fas fa-play"></i>
         <div class="quadratini">
           <img class="cerchio"src="svg/svg-8.svg" alt="">
           <img class="carrello"src="svg/svg-7.svg" alt="">
@@ -251,9 +252,12 @@
       <div class="contatti">
         <div class="contatti-top">
           <div class="globo">
-            <img class="ny" src="img/h1-contact-rev-02.png" alt="+">
-            <img class="spb" src="img/h1-contact-rev-02.png" alt="+">
-            <img  class="sy"src="img/h1-contact-rev-02.png" alt="+">
+            <img @click="ddNy()" class="ny" src="img/h1-contact-rev-02.png" alt="+">
+            <div v-if="ny" class="dd dd-ny">New York coaching</div>
+            <img @click="ddSpb()" class="spb" src="img/h1-contact-rev-02.png" alt="+">
+            <div v-if="spb" class="dd dd-spb">Saint Petersburg coaching</div>
+            <img @click="ddSy()" class="sy"src="img/h1-contact-rev-02.png" alt="+">
+            <div v-if="sy" class="dd dd-sy">Sidney coaching</div>
           </div>
           <div class="imput">
             <h2>Contact us<span>.</span></h2>
@@ -270,11 +274,26 @@
         </div>
         <div class="contatti-bottom">
           <ul>
-            <li><img src="img/h4-clients-img-03.png" alt="ad"></li>
-            <li><img src="img/h4-clients-img-05.png" alt="adidas"></li>
-            <li><img src="img/h4-clients-img-07.png" alt="bb"></li>
-            <li><img src="img/h4-clients-img-09.png" alt="aa"></li>
-            <li><img src="img/h4-clients-img-01.png" alt="rko"></li>
+            <li>
+              <img @mouseover="Mhover()" v-if="hover" src="img/h4-clients-img-03.png" alt="ad">
+              <img v-else src="img/h4-clients-img-04-1.png" alt="ad">
+            </li>
+            <li>
+              <img @mouseover="Mhover()" v-if="hover" src="img/h4-clients-img-05.png" alt="adidas">
+              <img v-else src="img/h4-clients-img-06-1.png" alt="adidas">
+            </li>
+            <li>
+              <img @mouseover="Mhover()" v-if="hover" src="img/h4-clients-img-07.png" alt="bb">
+              <img v-else src="img/h4-clients-img-08-1.png" alt="bb">
+            </li>
+            <li>
+              <img @mouseover="Mhover()" v-if="hover" src="img/h4-clients-img-09.png" alt="aa">
+              <img v-else src="img/h4-clients-img-10-1.png" alt="aa">
+            </li>
+            <li>
+              <img @mouseover="Mhover()" v-if="hover" src="img/h4-clients-img-01.png" alt="rko">
+              <img v-else src="img/h4-clients-img-02.png" alt="">
+            </li>
           </ul>
         </div>
       </div>
@@ -319,9 +338,9 @@
           <h5>Contact me</h5>
           <hr>
           <ul>
-            <li><i class="fab fa-twitter"></i>Via Pico de Paperis 132 To</li>
-            <li><i class="fab fa-twitter"></i>(351) 555 123 321</li>
-            <li><i class="fab fa-twitter"></i>paperinik@super.com</li>
+            <li><i class="fas fa-map-marker-alt"></i></i>Via Pico de Paperis 132 To</li>
+            <li><i class="fas fa-phone-alt"></i>(351) 555 123 321</li>
+            <li><i class="far fa-envelope"></i></i>paperinik@super.com</li>
             <li>
               <input type="text" placeholder="Your name">
             </input>
@@ -331,7 +350,10 @@
         </div>
       </div>
     </footer>
-
+    <div class="copyright">
+      <small>Copyright Everlead all right reserved.</small>
+    </div>
+  </div>
   <!-- JS link -->
   <script src="js/script.js" charset="utf-8"></script>
   </body>

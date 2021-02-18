@@ -68,6 +68,9 @@ nav ul li:hover{
   width: 80%;
   margin: 10%;
 }
+.jumbo-sx{
+  line-height: 1.4
+}
 .jumbo-sx h1{
   font-size: 60px;
 }
@@ -78,6 +81,7 @@ nav ul li:hover{
   display: flex;
 }
 .jumbo-buttons button{
+  margin-top: 10px;
   padding: 8px 20px;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
@@ -422,7 +426,7 @@ margin-bottom: 15px;
 }
 .contatti-top{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .contatti-bottom{
@@ -430,7 +434,7 @@ margin-bottom: 15px;
 }
 .contatti .globo{
   position: relative;
-  width: 40%;
+  width: 550px;
   background-image: url("../img/h1-contact-rev-01.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -477,7 +481,7 @@ margin-bottom: 15px;
 }
 .contatti .imput{
   height: 300px;
-  width: 40%
+  width: 550px
 }
 .contatti hr{
   margin-top: 15px;
@@ -566,7 +570,16 @@ footer .social i:hover{
 .contact-me i{
   color: rgb(255,70,18);
   padding-right: 10px;
-
+}
+.contact-me button{
+  margin-top: 10px;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(255,70,18);
 }
 .copyright{
   display: flex;
